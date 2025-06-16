@@ -20,8 +20,14 @@ tf.config.set_visible_devices([], 'GPU')
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
 logging.getLogger('tensorflow').setLevel(logging.ERROR)
 
-# Hard‑coded Google API key
-GOOGLE_API_KEY = "AIzaSyCDhN63yAiXk5Z_zh3TIw50Cu5PD3MUMts"
+# Google API Configuration
+GOOGLE_API_KEY=your_api_key_here
+
+# Optional Configuration
+TEMPERATURE=0.1
+MAX_OUTPUT_TOKENS=1024
+TOP_K_DOCUMENTS=5
+
 genai.configure(api_key=GOOGLE_API_KEY)
 
 # Constants
