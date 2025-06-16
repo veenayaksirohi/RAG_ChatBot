@@ -1,0 +1,12 @@
+flask
+flask-cors
+python-dotenv
+
+tensorflow==2.19.0
+tensorflow-hub==0.16.1
+tensorflow-text==2.19.0
+
+chromadb
+langchain-core>=0.1.46          # add this
+langchain-community
+google-generativeai
